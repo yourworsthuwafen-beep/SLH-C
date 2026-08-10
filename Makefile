@@ -9,7 +9,7 @@ install:
 	sudo chown -R $$USER:$$USER /opt/super-slaughter-house
 	@echo "Creating global terminal shortcut 'slh'..."
 	echo '#!/bin/sh' | sudo tee /usr/local/bin/slh > /dev/null
-	echo 'cd /opt/super-slaughter-house && python3 Slaughterhouse.py "$$@"' | sudo tee -a /usr/local/bin/slh > /dev/null
+	echo 'cd /opt/super-slaughter-house && ./Slaughterhouse.py "$$@"' | sudo tee -a /usr/local/bin/slh > /dev/null
 	sudo chmod +x /usr/local/bin/slh
 	@echo "Done! Run 'slh' from any terminal."
 
