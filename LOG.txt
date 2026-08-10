@@ -1,0 +1,3 @@
+Player Moved
+LOG:Sprite Top/Bottom Stabilized
+LOG:Prevented Sprite From Going Out Of Bounds
